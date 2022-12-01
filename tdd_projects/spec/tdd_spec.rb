@@ -1,5 +1,6 @@
 require "rspec"
 require "tdd"
+require "honoi"
 
 describe "#my_uniq" do
     it "return unique elements" do
@@ -31,7 +32,19 @@ describe "#stock_picker" do
     end
 end
 
-describe "#towers_of_hanoi" do
-    
+describe Honoi do
+    subject(:honoi) { Honoi.new(6) }
+    describe "#initialize" do
 
-end 
+        it "creates stacks" do 
+            expect(honoi.stacks).to eq([[], [], []])
+        end
+        it "takes numbers of discs" do
+            expect(honoi.discs.length).to eq(6)
+        end
+
+        # it "takes integer" do
+        #     expect{ }
+        # end
+    end
+end

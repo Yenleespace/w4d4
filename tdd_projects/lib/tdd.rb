@@ -29,7 +29,4 @@ def stock_picker(arr)
         max = ele if ele > max
     end
     [arr.index(min), arr.index(max)]
-
-def towers_of_hanoi(number_of_disks)
-    stacks = [[],[],[]]
 end
