@@ -14,3 +14,18 @@ def two_sum(arr)
     end
     new_arr
 end
+
+def my_transpose(arr)
+    arr.transpose
+end
+
+def stock_picker(arr)
+    min = arr[0]
+    max = 0
+
+    arr.each_with_index do |ele, i|
+        min = ele if ele < min
+        max = ele if ele > max
+    end
+    [arr.index(min), arr.index(max)]
+end
