@@ -24,8 +24,12 @@ def stock_picker(arr)
     max = 0
 
     arr.each_with_index do |ele, i|
+        
         min = ele if ele < min
         max = ele if ele > max
     end
     [arr.index(min), arr.index(max)]
+
+def towers_of_hanoi(number_of_disks)
+    stacks = [[],[],[]]
 end

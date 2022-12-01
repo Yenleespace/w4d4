@@ -30,3 +30,8 @@ describe "#stock_picker" do
         expect(stock_picker(prices_by_day)).to eq([1, 5])
     end
 end
+
+describe "#towers_of_hanoi" do
+    
+
+end 
